@@ -7,3 +7,8 @@
 3. Builder
 4. Singleton
 5. Prototype
+
+## Structural
+
+1. Adapter
+2. Bridge
