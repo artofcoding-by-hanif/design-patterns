@@ -23,3 +23,4 @@
 1. Chain of responsibility
 2. Command
 3. Iterator
+4. Mediator
