@@ -24,3 +24,4 @@
 2. Command
 3. Iterator
 4. Mediator
+5. Memento
