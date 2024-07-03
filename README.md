@@ -25,3 +25,4 @@
 3. Iterator
 4. Mediator
 5. Memento
+6. Observer
