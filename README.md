@@ -26,3 +26,5 @@
 4. Mediator
 5. Memento
 6. Observer
+7. State
+8. Strategy
