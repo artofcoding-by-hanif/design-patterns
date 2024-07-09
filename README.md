@@ -28,3 +28,4 @@
 6. Observer
 7. State
 8. Strategy
+9. Template Method
