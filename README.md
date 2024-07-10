@@ -29,3 +29,4 @@
 7. State
 8. Strategy
 9. Template Method
+10. Visitor
