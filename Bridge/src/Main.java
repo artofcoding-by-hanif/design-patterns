@@ -1,6 +1,4 @@
-import com.artofcoding.bridge.AdvancedRemoteControl;
-import com.artofcoding.bridge.RemoteControl;
-import com.artofcoding.bridge.SonyTV;
+import com.artofcoding.bridge.*;
 import com.artofcoding.shape_bridge.Circle;
 import com.artofcoding.shape_bridge.RasterRenderer;
 import com.artofcoding.shape_bridge.Renderer;
@@ -17,6 +15,8 @@ public class Main {
         var remoteControl2 = new AdvancedRemoteControl(new SonyTV());
         remoteControl.turnOn();
         remoteControl2.setChannel(1);
+        var remoteControl3 = new AIRemoteControl(new LGTV());
+        remoteControl3.speechRecognize(null);
 
 //      Example 2
         Renderer vectorRenderer = new VectorRenderer();
