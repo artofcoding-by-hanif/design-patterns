@@ -1,6 +1,6 @@
 package com.artofcoding.command.fx;
 
-public class Button {
+public class Button { // Invoker
     private String label;
     private Command command;
 
