@@ -1,5 +1,9 @@
 import com.artofcoding.composite.Group;
 import com.artofcoding.composite.Shape;
+import com.artofcoding.example.Circle;
+import com.artofcoding.example.Drawing;
+import com.artofcoding.example.Graphic;
+import com.artofcoding.example.Square;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +22,20 @@ public class Main {
         group.add(group2);
 
         group.render();
+
+        // Example 2
+        Graphic circle = new Circle();
+        Graphic square = new Square();
+
+        Graphic drawing = new Drawing();
+        drawing.add(circle);
+        drawing.add(square);
+
+        // Create a larger drawing and add smaller drawings
+        Drawing largerDrawing = new Drawing();
+        largerDrawing.add(drawing);
+        largerDrawing.add(new Circle());
+
+        largerDrawing.render();
     }
 }
