@@ -1,3 +1,7 @@
+import com.artofcoding.example.ChatMediator;
+import com.artofcoding.example.ChatRoom;
+import com.artofcoding.example.ChatUser;
+import com.artofcoding.example.User;
 import com.artofcoding.mediator.ArticleDialogBox;
 
 public class Main {
@@ -11,6 +15,17 @@ public class Main {
 
         var dialog2 = new com.artofcoding.mediatorwithobserver.ArticleDialogBox();
         dialog2.simulateUserInteraction();
+
+        System.out.println("Example 2");
+        ChatMediator chatRoom = new ChatRoom();
+
+        User user1 = new ChatUser(chatRoom, "Alice");
+        User user2 = new ChatUser(chatRoom, "Bob");
+        User user3 = new ChatUser(chatRoom, "charlie");
+
+        user1.sendMessage("Hello, everyone!");
+        user2.sendMessage("Hi Alice!");
+        user3.sendMessage("Hello Alice and Bob!");
 
     }
 }
